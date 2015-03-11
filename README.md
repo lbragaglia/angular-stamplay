@@ -41,5 +41,5 @@ How use angular-stamplay in your project
 		});
 </script>
 ````
-# REFERENCE
-[STAMPLAY-JS-SDK](https://github.com/Stamplay/stamplay-js-sdk)
+# Reference
+For all methods doc see [stamplay-js-sdk](https://github.com/Stamplay/stamplay-js-sdk/blob/master/README.md)
