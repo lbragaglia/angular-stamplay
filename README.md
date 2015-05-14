@@ -24,7 +24,7 @@ How use angular-stamplay in your project
 <script>
   angular.module('mytestapp', ['ngStamplay'])
 
- 	// Now you may use Stamplay rather than $stamplay
+ 	// Now you may use $stamplay rather than Stamplay
   .controller('MainCtrl', function($scope, $stamplay) {
 
   	var user = $stamplay.User().Model;
