@@ -58,7 +58,7 @@
 
       var methods = {
         Cobject: function (options) {
-          var cobject = new global.Stamplay.Cobject();
+          var cobject = new global.Stamplay.Cobject(options);
           return cobject;
         },
         User: function () {
@@ -68,6 +68,10 @@
         Webhook: function () {
           var webhook = new global.Stamplay.Webhook();
           return webhook;
+        },
+        Query: function (option1, option2) {
+          var query = new global.Stamplay.Query(option1,option2);
+          return query;
         }
       };
 
