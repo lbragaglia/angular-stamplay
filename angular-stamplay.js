@@ -69,6 +69,10 @@
           var webhook = new global.Stamplay.Webhook();
           return webhook;
         },
+        Stripe: function () {
+          var stripe = new global.Stamplay.Stripe();
+          return stripe;
+        },
         Query: function (option1, option2) {
           var query = new global.Stamplay.Query(option1,option2);
           return query;
