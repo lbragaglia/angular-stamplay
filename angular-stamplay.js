@@ -73,6 +73,10 @@
           var stripe = new global.Stamplay.Stripe();
           return stripe;
         },
+        Codeblock: function(option){
+          var codeblock = new global.Stamplay.Codeblock(option)
+          return codeblock
+        },
         Query: function (option1, option2) {
           var query = new global.Stamplay.Query(option1,option2);
           return query;
