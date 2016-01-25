@@ -32,7 +32,7 @@ How use angular-stamplay in your project
 	    "email":"john@stamplay.com",
 	    "password":"john123"
 	}
-	user..signup(data, function(error, result){
+	user.signup(data, function(error, result){
     		//manage the result and the error
 	})
  		
