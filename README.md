@@ -27,18 +27,15 @@ How use angular-stamplay in your project
  	// Now you may use $stamplay rather than Stamplay
   .controller('MainCtrl', function($scope, $stamplay) {
 
-  	var user = $stamplay.User().Model;
-
-    /* GET the current logged use data */
-    user.currentUser()
-			.then(function () {
-				//DO something
-			})
-			.catch(function (err) {
-				//MANAGE err
-			});
-
-		});
+  	var user = $stamplay.User
+	var data = {
+	    "email":"john@stamplay.com",
+	    "password":"john123"
+	}
+	user..signup(data, function(error, result){
+    		//manage the result and the error
+	})
+ 		
 </script>
 ````
 # Reference
