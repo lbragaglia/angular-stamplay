@@ -22,23 +22,6 @@
   // var stamplaySettings = global.StamplaySettings || {};
 
   var instance = false;
-
-  // Create a script tag with moment as the source
-  // and call onScriptLoad callback when it
-  // has been loaded
-  // function createScript() {
-  //   if (!document) {
-  //     return;
-  //   }
-  //   var script = document.createElement('script');
-  //   script.type = 'text/javascript';
-  //   script.async = true;
-  //   script.src = 'https://drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/0.0.4/stamplay.min.js';
-  //   // Attach the script tag to the document head
-  //   var s = document.getElementsByTagName('head')[0];
-  //   s.appendChild(script);
-  // }
-
   // Allow constructor to be used for both $stamplay and Stamplay services
   function $StamplayProvider() {
 
@@ -57,21 +40,15 @@
       }
 
       var methods = {
-        Cobject: function (options) {
-          var cobject = new global.Stamplay.Cobject(options);
+        Object: function (options) {
+          var cobject = new global.Stamplay.Object(options);
           return cobject;
         },
-        User: function () {
-          var user = new global.Stamplay.User();
-          return user;
-        },
+        User: global.Stamplay.User,
+        Stripe: global.Stamplay.Stripe,
         Webhook: function () {
           var webhook = new global.Stamplay.Webhook();
           return webhook;
-        },
-        Stripe: function () {
-          var stripe = new global.Stamplay.Stripe();
-          return stripe;
         },
         Codeblock: function(option){
           var codeblock = new global.Stamplay.Codeblock(option)
