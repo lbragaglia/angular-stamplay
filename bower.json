@@ -1,7 +1,7 @@
 {
   "name": "angular-stamplay",
   "main": "angular-stamplay.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Stamplay/angular-stamplay",
   "authors": [
     "Alessandro Oliveri alessandro.oliveri@gmail.com"
