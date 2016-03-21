@@ -40,8 +40,8 @@
       }
 
       var methods = {
-        Object: function (options) {
-          var cobject = new global.Stamplay.Object(options);
+        Cobject: function (options) {
+          var cobject = new global.Stamplay.Cobject(options);
           return cobject;
         },
         User: global.Stamplay.User,
